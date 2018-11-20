@@ -525,26 +525,6 @@ Prefab:
       propertyPath: death
       value: 
       objectReference: {fileID: 1103020927}
-    - target: {fileID: 1094453282465140, guid: d4412e6933ced0542adfc62c9df92951, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 114255845072937342, guid: d4412e6933ced0542adfc62c9df92951,
-        type: 2}
-      propertyPath: goodSoul
-      value: 
-      objectReference: {fileID: 1595005511777980, guid: 946cf906fe6d5e246b00ca8584e7f07b,
-        type: 2}
-    - target: {fileID: 114255845072937342, guid: d4412e6933ced0542adfc62c9df92951,
-        type: 2}
-      propertyPath: badSoul
-      value: 
-      objectReference: {fileID: 1442513042159830, guid: 84ebda98874b93f429dc8ff1b48d10d2,
-        type: 2}
-    - target: {fileID: 1094453282465140, guid: d4412e6933ced0542adfc62c9df92951, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4412e6933ced0542adfc62c9df92951, type: 2}
   m_IsPrefabAsset: 0
@@ -629,22 +609,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1544301449023118, guid: 2f77461098f089447864179171a1da0e,
     type: 2}
   m_PrefabInternal: {fileID: 1088440443}
---- !u!114 &1103020928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1103020927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773e763cd92cab46af7771cc192686b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  needCreate: 0
-  maxSoul: 3
-  countSoul: 0
-  lostSoulMas: []
-  lostSoul: {fileID: 1264145277201476, guid: 7cc4773964c5b1849855901a62994f0d, type: 2}
 --- !u!1 &1710053097
 GameObject:
   m_ObjectHideFlags: 0
