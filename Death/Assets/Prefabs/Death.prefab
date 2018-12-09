@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50908096816858102}
   - component: {fileID: 114428469392830034}
   - component: {fileID: 114862844012017590}
+  - component: {fileID: 95864710317117302}
   m_Layer: 0
   m_Name: Death
   m_TagString: Death
@@ -38,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1544301449023118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.629, y: -1.84, z: -1}
-  m_LocalScale: {x: 0.8000001, y: 0.8000001, z: 1}
+  m_LocalPosition: {x: -5.95, y: -1.55, z: -1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,9 +77,27 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.98, y: 0}
-  m_Size: {x: 1.47, y: 3.32}
+  m_Offset: {x: -0.31, y: -0.29}
+  m_Size: {x: 0.84, y: 1.6}
   m_Direction: 0
+--- !u!95 &95864710317117302
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544301449023118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f6f474fa8a05298439f81656517a91d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114428469392830034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,7 +161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 71f83917dffee734db1422ec648f9b4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 767d7db121688bb48ac6e92a7bc7ec39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

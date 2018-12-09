@@ -21,15 +21,16 @@ public class CreateMans : MonoBehaviour {
 		if(deltaTime>mainTime)
 		{
 			gameObject.GetComponent<ScoreScript>().stateStart = true;
+			gameObject.GetComponent<health>().stateStart = true;
 			
 			mainTime = Random.Range(minTime, maxTime);
 			deltaTime = 0;
 			typeMan = Random.Range(0, 100);
 			
 			if(typeMan%2 == 1)
-				Instantiate(goodMan, new Vector3(10, -2.54f, 0), Quaternion.identity);
+				Instantiate(goodMan, new Vector3(25, -1.0f, 0), Quaternion.identity);
 			else
-				Instantiate(badMan, new Vector3(10, -2.54f, 0), Quaternion.identity);
+				Instantiate(badMan, new Vector3(25, -1.0f, 0), Quaternion.identity);
 		}
 	}
 }

@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour {
 	public bool stateStart = false;
 	public Text scoreText;
+	public int scoreI = 0;
 
 	public float speedScore = 0.5f;
-	private float scoreF = 0;
-	private int scoreI = 0;
+	public float scoreF = 0;
+	
 
 	// Use this for initialization
 	void Start () {

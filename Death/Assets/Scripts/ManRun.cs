@@ -5,7 +5,7 @@ using UnityEngine;
 public class ManRun : MonoBehaviour {
 
 	public float speed = 1.0f;
-	public float distance = 8.0f;
+	public float distance = 20.0f;
 	public int needDead = 0;
 
 	private Vector3 deathPosition;
@@ -34,7 +34,7 @@ public class ManRun : MonoBehaviour {
 				mainLight.transform.localPosition = Vector3.zero;
 			}
 		}
-		if(transform.position.x < -10.0f)
+		if(transform.position.x < -25.0f)
 		    Destroy(gameObject);
 	}
 }

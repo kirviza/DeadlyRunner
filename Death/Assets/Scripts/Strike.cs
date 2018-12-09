@@ -18,9 +18,15 @@ public class Strike : MonoBehaviour {
 				if(man.tag == "goodMan")
 				{
 					Instantiate(goodSoul, man.transform.position, Quaternion.identity);
+					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
+					if(Camera.main.GetComponent<health>().healthVolume < 0)
+						Camera.main.GetComponent<health>().healthVolume = 0;
 				}else
 				{
 					Instantiate(badSoul, man.transform.position, Quaternion.identity);
+					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
+					if(Camera.main.GetComponent<health>().healthVolume < 0)
+						Camera.main.GetComponent<health>().healthVolume = 0;
 				}
 				Destroy(man);
 			}else
