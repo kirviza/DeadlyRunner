@@ -8,6 +8,8 @@ public class ManRun : MonoBehaviour {
 	public float distance = 20.0f;
 	public int needDead = 0;
 
+	public GameObject head;
+
 	private Vector3 deathPosition;
 
 	public GameObject Light;

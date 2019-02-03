@@ -28,11 +28,17 @@ public class Strike : MonoBehaviour {
 					if(Camera.main.GetComponent<health>().healthVolume < 0)
 						Camera.main.GetComponent<health>().healthVolume = 0;
 				}
-				Destroy(man);
+
+				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
+
+				//Destroy(man);
 			}else
 			{
 				death.GetComponent<lostSoulCreate>().needCreate = true;
-				Destroy(man);
+
+				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
+				
+				//Destroy(man);
 			}		
 		}
 	}

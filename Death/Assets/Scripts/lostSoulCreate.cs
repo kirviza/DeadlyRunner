@@ -29,10 +29,12 @@ public class lostSoulCreate : MonoBehaviour {
 			needCreate = !needCreate;
 			if(countSoul == maxSoul)
 			{
+				Camera.main.GetComponent<health>().healthSlider.gameObject.SetActive(false);
+				Camera.main.GetComponent<health>().stateStart = false;
+				
 				Camera.main.GetComponent<CreateMans>().enabled = false;
 				Camera.main.GetComponent<ScoreScript>().enabled = false;
 				Camera.main.GetComponent<ScoreScript>().scoreText.enabled = false;
-				Camera.main.GetComponent<health>().healthSlider.gameObject.SetActive(false);
 				YourScore.text = " Your Score: " + Camera.main.GetComponent<ScoreScript>().scoreI.ToString();
 				Camera.main.GetComponent<ScoreScript>().scoreText.text = "Score: 0";
 				Camera.main.GetComponent<ScoreScript>().scoreF = 0;
