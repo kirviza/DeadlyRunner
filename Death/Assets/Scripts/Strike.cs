@@ -10,6 +10,10 @@ public class Strike : MonoBehaviour {
 	public GameObject lostSoul;
 
     void OnMouseDown (){
+		// кусок кода от ромаша
+		// по нажатию кнопки запускаем анимацию удара
+		death.GetComponent<Animator>().SetTrigger("touch");
+		// конец церь-кода ромаша
 		if(death.GetComponent<DeathTrigger>().man)
 		{
 			GameObject man = death.GetComponent<DeathTrigger>().man;
