@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: dc011982d83c1b545b2635a8ffce116c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: regular_wait_head_sprite_sheet_0
+    21300002: regular_wait_head_sprite_sheet_1
+    21300004: regular_wait_head_sprite_sheet_2
+    21300006: regular_wait_head_sprite_sheet_3
+    21300008: regular_wait_head_sprite_sheet_4
+    21300010: regular_wait_head_sprite_sheet_5
+    21300012: regular_wait_head_sprite_sheet_6
+    21300014: regular_wait_head_sprite_sheet_7
+    21300016: regular_wait_head_sprite_sheet_8
+    21300018: regular_wait_head_sprite_sheet_9
+    21300020: regular_wait_head_sprite_sheet_10
+    21300022: regular_wait_head_sprite_sheet_11
+    21300024: regular_wait_head_sprite_sheet_12
+    21300026: regular_wait_head_sprite_sheet_13
+    21300028: regular_wait_head_sprite_sheet_14
+    21300030: regular_wait_head_sprite_sheet_15
+    21300032: regular_wait_head_sprite_sheet_16
+    21300034: regular_wait_head_sprite_sheet_17
+    21300036: regular_wait_head_sprite_sheet_18
+    21300038: regular_wait_head_sprite_sheet_19
+    21300040: regular_wait_head_sprite_sheet_20
+    21300042: regular_wait_head_sprite_sheet_21
+    21300044: regular_wait_head_sprite_sheet_22
+    21300046: regular_wait_head_sprite_sheet_23
+    21300048: regular_wait_head_sprite_sheet_24
+    21300050: regular_wait_head_sprite_sheet_25
+    21300052: regular_wait_head_sprite_sheet_26
+    21300054: regular_wait_head_sprite_sheet_27
+    21300056: regular_wait_head_sprite_sheet_28
+    21300058: regular_wait_head_sprite_sheet_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0818ede030b4034398578a334c9e058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615fa7933ac029f42826da1a360e0f36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f8e22935079344db9d2b3889ad85be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacd9cdf9e49da44eacafa3405209771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef06d0f37fc8b649b1113f4dec2fe75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 1079
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1540bc55d4cccc49afe15613c36ec3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71391171fcbdb064b9eaf26d1f0ab218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2690c59b3cae4aa499c4bcd1f0dfb071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdda3908cd88c3345bdf1e47d0dc8084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acd32bade6ebe943bf5618f4927c46b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb621c884e02f2e49b00c2d9c40a8a0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 823
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82d4480ae6556a4c855af6bf1d05479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8b8c4ddb2a1024da08f1e8affcfde4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13de69fb2743a2840a32d52191c565c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8efd34096d8e7479a6cb7c8a6ea813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ee69e86f1b64b44b799110f7eb300c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd3e16121c7b804ebdbb83287cad3f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 567
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ebab10be9cadb44aa70fe8e04d24bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bca8f99f53a82747bc277d6aebee7bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d0d426797824d43bbbff9d0182fc15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819515208df21414097faa9602c8200e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6703f883e31a3b94498d17fd5a859660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067243eb40c255e44ad9790dc2b1a5af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 311
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3cf75f9905e5e409a230cde76674fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbc4ccaf441ff74c8aac472b21bf875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f5a8588b47ccf419417eee1a6e62dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4ab227d3ad35d4fb3548cd05eb67db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfb6c6a8bf1bf842a7afa7d84d56997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2081ba83c374d24479c3d8f7db1f2b23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: regular_wait_head_sprite_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 55
+        width: 154
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417434ac54382d74f8e2149bdbcbb460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 96d811fc54842e04e8d7a62ce9fc167b
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
