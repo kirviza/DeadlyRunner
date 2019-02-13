@@ -485,7 +485,7 @@ MonoBehaviour:
   minTime: 0.3
   maxTime: 0.5
   goodMan: {fileID: 1484579651057574, guid: 971e220f5fd672e4ebfd33205100878f, type: 2}
-  badMan: {fileID: 1588526945670054, guid: bf520a1289c066943a9b9c565746ab86, type: 2}
+  badMan: {fileID: 1278026678497140, guid: bf520a1289c066943a9b9c565746ab86, type: 2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
