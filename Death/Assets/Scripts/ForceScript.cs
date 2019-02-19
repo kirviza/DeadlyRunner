@@ -7,9 +7,12 @@ public class ForceScript : MonoBehaviour {
 	private float timeLife = 0.0f;
 	private const float maxTimeLife = 3.0f;
 
+	private float speed = 300.0f;
+
 
 	// Use this for initialization
 	void Start () {
+		speed = Random.Range(250.0f, 350.0f);
 	}
 	
 	// Update is called once per frame
@@ -21,9 +24,11 @@ public class ForceScript : MonoBehaviour {
 			GetComponent<Collider2D>().enabled = false;
 			transform.parent = null;
 			GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(1.0f, Random.Range(0.0f, 1.0f)) * Random.Range(10.0f, 20.0f), ForceMode2D.Impulse);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(1.0f, Random.Range(0.5f, 1.0f)) * Random.Range(10.0f, 20.0f), ForceMode2D.Impulse);
 			useForce = !useForce;
 		}
+
+		transform.Rotate(0.0f, 0.0f, speed * Time.deltaTime);
 
 		if(transform.parent == null)
 		{
