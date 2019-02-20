@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50100040049075624}
   - component: {fileID: 114436429603539986}
   - component: {fileID: 114287265943703662}
+  - component: {fileID: 58769347222393042}
   m_Layer: 0
   m_Name: head_smg
   m_TagString: head
@@ -98,6 +99,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58769347222393042
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446311349308146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000014901161, y: -0.000000059604645}
+  serializedVersion: 2
+  m_Radius: 1.2799999
 --- !u!70 &70497912340189630
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
