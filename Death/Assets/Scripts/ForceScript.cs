@@ -21,6 +21,7 @@ public class ForceScript : MonoBehaviour {
 		{
 			GetComponent<Animator>().enabled = false;
 			GetComponent<SpriteRenderer>().sprite = GetComponent<HeadsMain>().rip;
+			GetComponent<Collider2D>().enabled = false;
 			transform.parent = null;
 			GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(1.0f, Random.Range(0.5f, 1.0f)) * Random.Range(10.0f, 20.0f), ForceMode2D.Impulse);
