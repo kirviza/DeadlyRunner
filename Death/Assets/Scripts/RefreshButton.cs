@@ -15,5 +15,6 @@ public class RefreshButton : MonoBehaviour {
 		Camera.main.GetComponent<health>().stateStart = true;
 		Camera.main.GetComponent<health>().healthSlider.gameObject.SetActive(true);
 		Camera.main.GetComponent<health>().healthVolume = 0;
+		Camera.main.GetComponent<StartTimer>().startAn = true;
 	}
 }

@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class StartTimer : MonoBehaviour {
 
+	public Transform allMen;
+	public GameObject myTimer;
 	public bool startAn = false;
-	public bool stopAn = false;
+	public bool stopAn = true;
 	private bool stateAn = false;
 	// Use this for initialization
 	void Start () {
-		
+		startAn = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(startAn)
+		if(startAn)// && allMen.childCount == 0)
 		{
-			gameObject.GetComponent<Animation>().Play();
+			myTimer.GetComponent<Animation>().Play();
 			startAn = !startAn;
-			stopAn = true;
+			stopAn = false;
 		}
 
-		stateAn = gameObject.GetComponent<Animation>().isPlaying;
+		stateAn = myTimer.GetComponent<Animation>().isPlaying;
 
-		if(!stateAn && stopAn)
+		if(!stateAn && !stopAn)
 		{
-			stopAn = false;
+			stopAn = true;
 		}
 		
 	}
