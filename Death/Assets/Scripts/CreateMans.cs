@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CreateMans : MonoBehaviour {
 
+	public Transform parent;
 	public float minTime = 1f;
 	public float maxTime = 2f;
 	public GameObject goodMan;
@@ -17,20 +18,23 @@ public class CreateMans : MonoBehaviour {
 		mainTime = maxTime;
 	}
 	void Update () {
-		deltaTime += Time.deltaTime;
-		if(deltaTime>mainTime)
+		if(GetComponent<StartTimer>().stopAn)
 		{
-			gameObject.GetComponent<ScoreScript>().stateStart = true;
-			gameObject.GetComponent<health>().stateStart = true;
-			
-			mainTime = Random.Range(minTime, maxTime);
-			deltaTime = 0;
-			typeMan = Random.Range(0, 100);
-			
-			if(typeMan%2 == 1)
-				Instantiate(goodMan, new Vector3(25, -1.0f, 0), Quaternion.identity);
-			else
-				Instantiate(badMan, new Vector3(25, -1.0f, 0), Quaternion.identity);
+			deltaTime += Time.deltaTime;
+			if(deltaTime>mainTime)
+			{
+				gameObject.GetComponent<ScoreScript>().stateStart = true;
+				gameObject.GetComponent<health>().stateStart = true;
+				
+				mainTime = Random.Range(minTime, maxTime);
+				deltaTime = 0;
+				typeMan = Random.Range(0, 100);
+				
+				if(typeMan%2 == 1)
+					Instantiate(goodMan, new Vector3(25, -1.0f, 0), Quaternion.identity, parent);
+				else
+					Instantiate(badMan, new Vector3(25, -1.0f, 0), Quaternion.identity, parent);
+			}
 		}
 	}
 }
