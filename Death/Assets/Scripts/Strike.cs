@@ -9,8 +9,6 @@ public class Strike : MonoBehaviour {
 	public GameObject badSoul;
 	public GameObject lostSoul;
 
-	public Transform parent;
-
     void OnMouseDown (){
 		// кусок кода от ромаша
 		// по нажатию кнопки запускаем анимацию удара
@@ -23,13 +21,13 @@ public class Strike : MonoBehaviour {
 			{
 				if(man.tag == "goodMan")
 				{
-					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);
+					Instantiate(goodSoul, man.transform.position, Quaternion.identity);
 					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
 					if(Camera.main.GetComponent<health>().healthVolume < 0)
 						Camera.main.GetComponent<health>().healthVolume = 0;
 				}else
 				{
-					Instantiate(badSoul, man.transform.position, Quaternion.identity, parent);
+					Instantiate(badSoul, man.transform.position, Quaternion.identity);
 					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
 					if(Camera.main.GetComponent<health>().healthVolume < 0)
 						Camera.main.GetComponent<health>().healthVolume = 0;
