@@ -787,11 +787,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: screens.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4758334207929354, guid: 1bc6265bac5547e4083f8f3d03ea5e9d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -824,31 +819,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: leftScreen
-      value: 
-      objectReference: {fileID: 989718353}
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: rigthScreen
-      value: 
-      objectReference: {fileID: 1402905881}
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: backgroundSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: screens.Array.data[0]
-      value: 
-      objectReference: {fileID: 989718353}
-    - target: {fileID: 114859306694552424, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-        type: 2}
-      propertyPath: screens.Array.data[1]
-      value: 
-      objectReference: {fileID: 1402905881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc6265bac5547e4083f8f3d03ea5e9d, type: 2}
   m_IsPrefabAsset: 0
@@ -1103,11 +1073,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974232627}
   m_CullTransparentMesh: 0
---- !u!1 &989718353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412946439704128, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-    type: 2}
-  m_PrefabInternal: {fileID: 698542615}
 --- !u!1 &1025845707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1142,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1025845707}
   m_CullTransparentMesh: 0
+--- !u!1001 &1034362984
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 29.786304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 11.153295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 20.58137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892335891694550, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d83e86512e4b6b4faf6faae5a9021dd, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1073383419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,11 +1466,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &1402905881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1764541979139702, guid: 1bc6265bac5547e4083f8f3d03ea5e9d,
-    type: 2}
-  m_PrefabInternal: {fileID: 698542615}
 --- !u!1 &1463422543
 GameObject:
   m_ObjectHideFlags: 0
