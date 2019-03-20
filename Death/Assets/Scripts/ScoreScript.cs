@@ -21,14 +21,13 @@ public class ScoreScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(GetComponent<StartTimer>().stopAn)
+
+		if(stateStart)
 		{
-			if(stateStart)
-			{
-				scoreF += Time.deltaTime;
-				scoreI = (int)(scoreF/speedScore);
-				scoreText.text = "Score: " + scoreI.ToString();
-			}
+			scoreF += Time.deltaTime;
+			scoreI = (int)(scoreF/speedScore);
+			scoreText.text = "Score: " + scoreI.ToString();
 		}
 	}
+
 }

@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   distance: 20
+  manType: 1
   needDead: 0
   head: {fileID: 1446311349308146}
   Light: {fileID: 1147456760747010, guid: d978c1993983f1d4f8ae5866768809cc, type: 2}

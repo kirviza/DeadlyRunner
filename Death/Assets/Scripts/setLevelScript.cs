@@ -5,17 +5,18 @@ using UnityEngine;
 public class setLevelScript : MonoBehaviour {
 
 	public bool startLevel = false;
-
 	public int currentScore = 0;
 	public int countLevel = 5;
 	public int currentLevel = 1;
 	public int randLevel = 1;
-
 	public int modValue = 10;
+
+	public GameObject LevelAnimation;
 
 	// Use this for initialization
 	void Start () {
-		startLevel = false;
+		countLevel = 5;
+		startLevel = true;
 		currentLevel = 1;
 		randLevel = 1;
 	}
@@ -26,19 +27,27 @@ public class setLevelScript : MonoBehaviour {
 		currentScore = GetComponent<ScoreScript>().scoreI;
 		if(currentScore%modValue == 0 && startLevel)
 		{
-			GetComponent<StartTimer>().startAn = true;
-			while(randLevel == currentLevel)
+			if(currentLevel != 1)
 			{
-				randLevel = Random.Range(1, countLevel);
+				currentLevel = 1;
+			}else
+			{
+				randLevel = Random.Range(2, countLevel);
+				currentLevel = randLevel;
+
+				if(currentScore == 0)
+					currentLevel = 1;
 			}
-			currentLevel = randLevel;
+
+			Camera.main.GetComponent<CreateMans>().whoNeedKill = currentLevel;
+
 			startLevel = false;
+
+			LevelAnimation.GetComponent<StartStopLevelAnimation>().StartStopAn = true;
 		}
 		if(currentScore%modValue != 0)
 		{
 			startLevel = true;
-		}
-
-		
+		}	
 	}
 }
