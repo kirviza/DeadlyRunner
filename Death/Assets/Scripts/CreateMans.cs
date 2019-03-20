@@ -10,15 +10,21 @@ public class CreateMans : MonoBehaviour {
 	public GameObject goodMan;
 	public GameObject badMan;
 
+	public bool needCreate = false;
+
+	public int whoNeedKill = 0;
+
 	private float deltaTime = 0f;
 	private float mainTime;
 	private int typeMan;
 
 	void Start () {
+		needCreate = false;
 		mainTime = maxTime;
+		deltaTime = 0;
 	}
 	void Update () {
-		if(GetComponent<StartTimer>().stopAn)
+		if(needCreate)
 		{
 			deltaTime += Time.deltaTime;
 			if(deltaTime>mainTime)
@@ -37,4 +43,5 @@ public class CreateMans : MonoBehaviour {
 			}
 		}
 	}
+	
 }

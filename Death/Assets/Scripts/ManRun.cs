@@ -6,6 +6,8 @@ public class ManRun : MonoBehaviour {
 
 	public float speed = 1.0f;
 	public float distance = 20.0f;
+
+	public bool manType;
 	public int needDead = 0;
 
 	public GameObject head;
@@ -19,7 +21,15 @@ public class ManRun : MonoBehaviour {
 
 	void Start()
 	{
-		needDead = Random.Range(0, 100)%2;
+		switch(Camera.main.GetComponent<CreateMans>().whoNeedKill)
+		{
+			case 1:needDead = Random.Range(0, 100)%2; break;
+			case 2:needDead = manType ? 1 : 0; break;
+			case 3:needDead = manType ? 0 : 1; break;
+			case 4:needDead = 1; break;
+			case 5:needDead = Random.Range(0, 100)%2; break;
+		}
+
 		deathPosition = GameObject.FindGameObjectWithTag("Death").transform.position;
 	}
 	
