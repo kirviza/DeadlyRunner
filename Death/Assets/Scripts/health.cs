@@ -46,10 +46,13 @@ public class health : MonoBehaviour {
 			}
 			death.GetComponent<lostSoulCreate>().countSoul = 0;
 		}
-		if(stateStart && GetComponent<CreateMans>().needCreate)
+		if(/* stateStart && */ GetComponent<CreateMans>().needCreate)
 		{
 			healthVolume += Time.deltaTime * speed;
-			healthSlider.GetComponent<Slider>().value = 100.0f - healthVolume;
 		}	
+		if(stateStart)
+		{
+			healthSlider.GetComponent<Slider>().value = 100.0f - healthVolume;
+		}
 	}	
 }

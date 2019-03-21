@@ -673,6 +673,7 @@ MonoBehaviour:
   badMan: {fileID: 1278026678497140, guid: bf520a1289c066943a9b9c565746ab86, type: 2}
   needCreate: 0
   whoNeedKill: 0
+  persentMan: 50
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -777,7 +778,7 @@ MonoBehaviour:
   countLevel: 5
   currentLevel: 1
   randLevel: 1
-  modValue: 20
+  modValue: 1000
   LevelAnimation: {fileID: 589580420}
 --- !u!1 &589580420
 GameObject:

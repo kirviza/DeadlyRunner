@@ -18,10 +18,13 @@ public class CreateMans : MonoBehaviour {
 	private float mainTime;
 	private int typeMan;
 
+	public int persentMan = 50;
+
 	void Start () {
 		needCreate = false;
 		mainTime = maxTime;
 		deltaTime = 0;
+		persentMan = 50;
 	}
 	void Update () {
 		if(needCreate)
@@ -36,10 +39,16 @@ public class CreateMans : MonoBehaviour {
 				deltaTime = 0;
 				typeMan = Random.Range(0, 100);
 				
-				if(typeMan%2 == 1)
+				if(typeMan>persentMan)
+				{
 					Instantiate(goodMan, new Vector3(25, -1.0f, 0), Quaternion.identity, parent);
+					persentMan += 5;
+				}
 				else
+				{
 					Instantiate(badMan, new Vector3(25, -1.0f, 0), Quaternion.identity, parent);
+					persentMan -= 5;
+				}
 			}
 		}
 	}

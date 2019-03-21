@@ -23,17 +23,14 @@ public class Strike : MonoBehaviour {
 			{
 				if(man.tag == "goodMan")
 				{
-					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);
-					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
-					if(Camera.main.GetComponent<health>().healthVolume < 0)
-						Camera.main.GetComponent<health>().healthVolume = 0;
+					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);				
 				}else
 				{
 					Instantiate(badSoul, man.transform.position, Quaternion.identity, parent);
-					Camera.main.GetComponent<health>().healthVolume -= 20.0f;
-					if(Camera.main.GetComponent<health>().healthVolume < 0)
-						Camera.main.GetComponent<health>().healthVolume = 0;
 				}
+				Camera.main.GetComponent<health>().healthVolume -= 8.0f;
+				if(Camera.main.GetComponent<health>().healthVolume < 0)
+					Camera.main.GetComponent<health>().healthVolume = 0;
 
 				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
 
