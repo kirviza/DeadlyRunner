@@ -483,6 +483,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &382758582
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.1884644
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.2408648
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -17.50324
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960993539729466, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f583835c45e64e04ab38b49eadc092aa, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &413469150
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +820,7 @@ MonoBehaviour:
   countLevel: 5
   currentLevel: 1
   randLevel: 1
-  modValue: 1000
+  modValue: 50
   LevelAnimation: {fileID: 589580420}
 --- !u!1 &589580420
 GameObject:
