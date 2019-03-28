@@ -39,3 +39,4 @@ public class ForceScript : MonoBehaviour {
 			Destroy(gameObject);
 	}
 }
+ 

@@ -24,13 +24,13 @@ public class StartStopLevelAnimation : MonoBehaviour {
 			{
 				string LevelName = "Level_"+ lastLevel +"_Stop";
 				GetComponent<Animation>().Play(LevelName);
-				Camera.main.GetComponent<CreateMans>().needCreate = false;
+//				Camera.main.GetComponent<CreateMans>().needCreate = false;
 			}else
 			{
 				lastLevel = Camera.main.GetComponent<setLevelScript>().currentLevel;
 				string LevelName = "Level_"+ lastLevel.ToString() +"_Start";
 				GetComponent<Animation>().Play(LevelName);
-				Camera.main.GetComponent<CreateMans>().needCreate = false;
+//				Camera.main.GetComponent<CreateMans>().needCreate = false;
 			}
 			StartStopAn = !StartStopAn;
 			visibleState = !visibleState;
@@ -43,7 +43,7 @@ public class StartStopLevelAnimation : MonoBehaviour {
 
 		if(!GetComponent<Animation>().isPlaying && visibleState)	
 		{
-			Camera.main.GetComponent<CreateMans>().needCreate = true;
+//			Camera.main.GetComponent<CreateMans>().needCreate = true;
 		}	
 	}
 }

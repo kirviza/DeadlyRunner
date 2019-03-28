@@ -5,18 +5,21 @@ using UnityEngine;
 public class Strike : MonoBehaviour {
 
 	public GameObject death;
-	public GameObject goodSoul;
+/* 	public GameObject goodSoul;
 	public GameObject badSoul;
 	public GameObject lostSoul;
+	public Transform parent;*/
 
-	public Transform parent;
+  void OnMouseDown (){
 
-    void OnMouseDown (){
-		// кусок кода от ромаша
-		// по нажатию кнопки запускаем анимацию удара
-		death.GetComponent<Animator>().SetTrigger("touch");
-		// конец церь-кода ромаша
-		if(death.GetComponent<DeathTrigger>().man)
+		if(Camera.main.GetComponent<GameProperty>()._StartGame && !Camera.main.GetComponent<GameProperty>()._PlayAnim)
+		{
+			//Запуск анимации удара
+			death.GetComponent<Animator>().SetTrigger("touch");
+		}
+		
+
+		/* if(death.GetComponent<DeathTrigger>().man)
 		{
 			GameObject man = death.GetComponent<DeathTrigger>().man;
 			if(man.GetComponent<ManRun>().needDead == 1)
@@ -28,22 +31,14 @@ public class Strike : MonoBehaviour {
 				{
 					Instantiate(badSoul, man.transform.position, Quaternion.identity, parent);
 				}
-				Camera.main.GetComponent<health>().healthVolume -= 8.0f;
-				if(Camera.main.GetComponent<health>().healthVolume < 0)
-					Camera.main.GetComponent<health>().healthVolume = 0;
 
 				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
 
-				//Destroy(man);
 			}else
 			{
-				death.GetComponent<lostSoulCreate>().needCreate = true;
-
-				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
-				
-				//Destroy(man);
+				;man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
 			}		
-		}
+		}*/
 	}
 	
 }

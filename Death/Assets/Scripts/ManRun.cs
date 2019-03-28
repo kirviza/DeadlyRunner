@@ -21,6 +21,7 @@ public class ManRun : MonoBehaviour {
 
 	void Start()
 	{
+		/* 
 		switch(Camera.main.GetComponent<CreateMans>().whoNeedKill)
 		{
 			case 1:needDead = Random.Range(0, 100)%2; break;
@@ -29,6 +30,7 @@ public class ManRun : MonoBehaviour {
 			case 4:needDead = 1; break;
 			case 5:needDead = Random.Range(0, 100)%2; break;
 		}
+		*/
 
 		deathPosition = GameObject.FindGameObjectWithTag("Death").transform.position;
 	}

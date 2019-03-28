@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour {
 	public bool stateStart = false;
-	public Text scoreText;
 	public int scoreI = 0;
 
 	public float speedScore = 0.5f;
@@ -16,18 +15,17 @@ public class ScoreScript : MonoBehaviour {
 	void Start () {
 		scoreF = 0;
 		scoreI = 0;
-		scoreText.text = "Score: 0";
+		GetComponent<Text>().text = "расстояние: 0";
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if(stateStart)
+		if(Camera.main.GetComponent<GameProperty>()._StartGame)
 		{
 			scoreF += Time.deltaTime;
 			scoreI = (int)(scoreF/speedScore);
-			scoreText.text = "Score: " + scoreI.ToString();
+			GetComponent<Text>().text = "расстояние: " + scoreI.ToString();
 		}
 	}
-
 }

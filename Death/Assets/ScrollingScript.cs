@@ -10,9 +10,7 @@ public class ScrollingScript : MonoBehaviour {
 	private Vector3 pos;
 	void Start () {
 		leftBorder = Camera.main.ScreenToWorldPoint(new Vector2(0,0)).x;
-		Debug.Log(leftBorder);
 		size = GetComponent<SpriteRenderer>().bounds.extents.x*2;
-		Debug.Log(GetComponent<SpriteRenderer>().bounds.max.x);
 	}
 	
 	// Update is called once per frame

@@ -39,7 +39,7 @@ public class setLevelScript : MonoBehaviour {
 					currentLevel = 1;
 			}
 
-			Camera.main.GetComponent<CreateMans>().whoNeedKill = currentLevel;
+//			Camera.main.GetComponent<CreateMans>().whoNeedKill = currentLevel;
 
 			startLevel = false;
 

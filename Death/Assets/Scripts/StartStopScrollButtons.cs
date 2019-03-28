@@ -8,6 +8,8 @@ public class StartStopScrollButtons : MonoBehaviour {
 	public bool UpDownAn = false;
 	public bool StartStopAn = false;
 
+	
+
 	void Start () {
 	
 	}
