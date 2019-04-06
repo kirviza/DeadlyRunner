@@ -18,7 +18,7 @@ public class ScrollingScript : MonoBehaviour {
 		pos = transform.position;
 		transform.position = new Vector3(pos.x - Time.deltaTime*speed,pos.y,pos.z);
 		if (transform.position.x < leftBorder){
-			transform.position = new Vector3(size*2f + leftBorder,pos.y,pos.z);
+			transform.position = new Vector3(size + 14f,pos.y,pos.z);
 		}
 	}
 }
