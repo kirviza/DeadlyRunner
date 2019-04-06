@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlAnimFlagScript : MonoBehaviour {
-
+public class ControlLevelAnimFlagScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +10,6 @@ public class ControlAnimFlagScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Camera.main.GetComponent<GameProperty>()._PlayAnim = GetComponent<Animation>().isPlaying;
+		Camera.main.GetComponent<GameProperty>()._PlayLevelAnim = GetComponent<Animation>().isPlaying;
 	}
 }

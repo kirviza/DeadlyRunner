@@ -202,9 +202,10 @@ MonoBehaviour:
   speed: 20
   distance: 20
   manType: 0
-  needDead: 0
-  head: {fileID: 1844220473015122}
-  Light: {fileID: 1147456760747010, guid: d978c1993983f1d4f8ae5866768809cc, type: 2}
+  masLight:
+  - {fileID: 1900133276011132, guid: 4fe383351ea67b5448a568e1be28f072, type: 2}
+  - {fileID: 1004862808861434, guid: 6eaca26586168954abdfddc625935cd4, type: 2}
+  - {fileID: 1453695980906476, guid: a9817e0b1b1558345bcbba1927961839, type: 2}
 --- !u!212 &212802435205287172
 SpriteRenderer:
   m_ObjectHideFlags: 1

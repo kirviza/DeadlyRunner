@@ -7,43 +7,40 @@ public class StartStopLevelAnimation : MonoBehaviour {
 	private bool visibleState = false;
 	public bool StartStopAn = false;
 
-	private int lastLevel = 1;
+	private int level = 1;
 
 	void Start () {
-		lastLevel = 1;
+		level = 1;
 		StartStopAn = true;
 		visibleState = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		if(StartStopAn)
-		{			
-			if(visibleState)
-			{
-				string LevelName = "Level_"+ lastLevel +"_Stop";
-				GetComponent<Animation>().Play(LevelName);
-//				Camera.main.GetComponent<CreateMans>().needCreate = false;
-			}else
-			{
-				lastLevel = Camera.main.GetComponent<setLevelScript>().currentLevel;
-				string LevelName = "Level_"+ lastLevel.ToString() +"_Start";
-				GetComponent<Animation>().Play(LevelName);
-//				Camera.main.GetComponent<CreateMans>().needCreate = false;
+		if(Camera.main.GetComponent<GameProperty>()._StartGame && !GetComponent<Animation>().isPlaying)
+		{
+			if(StartStopAn)
+			{			
+				if(visibleState)
+				{
+					string LevelName = "Level_"+ level +"_Stop";
+					GetComponent<Animation>().Play(LevelName);
+					StartStopAn = true;
+					visibleState = false;
+				}else
+				{
+					level = Camera.main.GetComponent<setLevelScript>().currentLevel;
+					string LevelName = "Level_"+ level.ToString() +"_Start";
+					GetComponent<Animation>().Play(LevelName);
+					StartStopAn = false;
+					visibleState = true;
+				}
 			}
-			StartStopAn = !StartStopAn;
-			visibleState = !visibleState;
+		}
+		if(Camera.main.GetComponent<GameProperty>()._StartGame == false)
+		{
+			//GetComponent<Animation>().
 		}
 
-		if(!GetComponent<Animation>().isPlaying && !visibleState)
-		{
-			StartStopAn = true;
-		}
-
-		if(!GetComponent<Animation>().isPlaying && visibleState)	
-		{
-//			Camera.main.GetComponent<CreateMans>().needCreate = true;
-		}	
 	}
 }

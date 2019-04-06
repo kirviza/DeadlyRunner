@@ -20,7 +20,7 @@ public class CreateMans : MonoBehaviour {
 	}
 	
 	void Update () {
-		if(Camera.main.GetComponent<GameProperty>()._NeedCreateMan)
+		if(GetComponent<GameProperty>()._NeedCreateMan &&  GetComponent<GameProperty>()._CurScore != 0 )
 		{
 			deltaTime += Time.deltaTime;
 			if(deltaTime>mainTime)
@@ -29,10 +29,12 @@ public class CreateMans : MonoBehaviour {
 				deltaTime = 0;
 				numbMan = Random.Range(0, men.Length-1);	
 
-				Instantiate(men[numbMan], new Vector3(25, -1.0f, 0), Quaternion.identity, parent);
+				GameObject man = Instantiate(men[numbMan], new Vector3(25, -1.0f, 0), Quaternion.identity, parent) as GameObject;
+ 
+ 
+				man.GetComponent<ManRun>().manType = (MAN_TYPE) Random.Range(0, 3);
 			}
 		}
-
 	}
 	
 }

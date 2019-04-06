@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 212982481353393736}
   - component: {fileID: 70497912340189630}
   - component: {fileID: 114279786661866586}
-  - component: {fileID: 114674445811595502}
   - component: {fileID: 95368230790348146}
   m_Layer: 0
   m_Name: Man_2
@@ -179,9 +178,10 @@ MonoBehaviour:
   speed: 20
   distance: 20
   manType: 1
-  needDead: 0
-  head: {fileID: 1446311349308146}
-  Light: {fileID: 1147456760747010, guid: d978c1993983f1d4f8ae5866768809cc, type: 2}
+  masLight:
+  - {fileID: 1900133276011132, guid: 4fe383351ea67b5448a568e1be28f072, type: 2}
+  - {fileID: 1004862808861434, guid: 6eaca26586168954abdfddc625935cd4, type: 2}
+  - {fileID: 1453695980906476, guid: a9817e0b1b1558345bcbba1927961839, type: 2}
 --- !u!114 &114287265943703662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,17 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 21300000, guid: 7b510ee451aa02240b3c506c6df36445, type: 3}
   rip: {fileID: 21300000, guid: 738761d9183b5394abd341e580ad88bc, type: 3}
---- !u!114 &114674445811595502
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484579651057574}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f93cbf7796b4c44a214aa3fda18a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212376350523061768
 SpriteRenderer:
   m_ObjectHideFlags: 1

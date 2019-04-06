@@ -13,15 +13,16 @@ public class ButtonStartScript : MonoBehaviour {
 	
 	void OnMouseUp()
 	{
+		Camera.main.GetComponent<GameProperty>()._StartGame = true;
+		
 		if(firstStart)
 		{
 			gameObject.GetComponentInParent<Animation>().Play("FirstStartAnim");
 		}
 		else
 		{
-			gameObject.GetComponentInParent<Animation>().Play("StartAnim");
+			gameObject.GetComponentInParent<Animation>().Play("FirstStartAnim");
 		}
 
-		Camera.main.GetComponent<GameProperty>()._StartGame = true;
 	}
 }

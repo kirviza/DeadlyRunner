@@ -5,10 +5,9 @@ using UnityEngine;
 public class Strike : MonoBehaviour {
 
 	public GameObject death;
-/* 	public GameObject goodSoul;
+ 	public GameObject goodSoul;
 	public GameObject badSoul;
-	public GameObject lostSoul;
-	public Transform parent;*/
+	public Transform parent;
 
   void OnMouseDown (){
 
@@ -16,29 +15,45 @@ public class Strike : MonoBehaviour {
 		{
 			//Запуск анимации удара
 			death.GetComponent<Animator>().SetTrigger("touch");
-		}
 		
-
-		/* if(death.GetComponent<DeathTrigger>().man)
-		{
-			GameObject man = death.GetComponent<DeathTrigger>().man;
-			if(man.GetComponent<ManRun>().needDead == 1)
+			if(death.GetComponent<DeathTrigger>().man)
 			{
-				if(man.tag == "goodMan")
+				GameObject man = death.GetComponent<DeathTrigger>().man;
+
+				man.GetComponent<ManRun>().manState = false;
+
+				if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_BAD)
 				{
-					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);				
+					Instantiate(badSoul, man.transform.position, Quaternion.identity, parent);				
+				}else if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_GOOD)
+				{
+					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);
 				}else
 				{
-					Instantiate(badSoul, man.transform.position, Quaternion.identity, parent);
+					Instantiate(goodSoul, man.transform.position, Quaternion.identity, parent);
 				}
 
-				man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
+				man.GetComponentInChildren<ForceScript>().enabled = true;
+ 
+				switch(Camera.main.GetComponent<setLevelScript>().currentLevel)
+				{
+					case 1: if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_ZERO) 
+							Camera.main.GetComponent<GameProperty>()._FinishGame = true;
+							break;
+					case 2: if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_ZERO || man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_BAD) 
+							Camera.main.GetComponent<GameProperty>()._FinishGame = true;
+							break;
+					case 3: if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_ZERO || man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_GOOD) 
+							Camera.main.GetComponent<GameProperty>()._FinishGame = true;
+							break;
+					case 4: break;
+					case 5: if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_ZERO) 
+							Camera.main.GetComponent<GameProperty>()._FinishGame = true;
+							break;
+				}
 
-			}else
-			{
-				;man.GetComponent<ManRun>().head.GetComponent<ForceScript>().enabled = true;
-			}		
-		}*/
+			}
+		}
 	}
 	
 }
