@@ -50,7 +50,7 @@ public class ManRun : MonoBehaviour {
 			if(manState)
 			{
 				if(transform.position.x - deathPosition.x < -2)
-				{
+				{/* 
 					switch(Camera.main.GetComponent<setLevelScript>().currentLevel)
 					{
 						case 1: if(manType == MAN_TYPE.TYPE_BAD || manType == MAN_TYPE.TYPE_GOOD) 
@@ -67,7 +67,7 @@ public class ManRun : MonoBehaviour {
 						case 5: if(manType == MAN_TYPE.TYPE_BAD || manType == MAN_TYPE.TYPE_GOOD) 
 								Camera.main.GetComponent<GameProperty>()._FinishGame = true;
 								break;
-					}
+					}*/
 				}
 			}
 		}		

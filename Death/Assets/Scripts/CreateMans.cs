@@ -9,7 +9,6 @@ public class CreateMans : MonoBehaviour {
 	public float maxTime = 2f;
 	public GameObject[] men;
 
-
 	private int numbMan = 0;
 	private float deltaTime = 0;
 	private float mainTime = 0;

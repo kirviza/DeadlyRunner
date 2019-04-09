@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class setLevelScript : MonoBehaviour {
 
@@ -8,13 +9,18 @@ public class setLevelScript : MonoBehaviour {
 	public GameObject ScoreLine;
 	public GameObject LevelAnimation;
 
+	public GameObject AllMen;
+
 
 	public int currentLevel = 1;
+	public int level = 1;
+	public int currentScore = 0;
 	private const int countLevel = 5;
-	private int currentScore = 0;
+	
 
 	void Start () {
 		currentLevel = 1;
+		level = 1;
 	}
 	
 	void Update () {
@@ -24,14 +30,22 @@ public class setLevelScript : MonoBehaviour {
 			if(score%modValue == 0 && (score - currentScore) > 0)
 			{
 				currentScore = score;
-				if(currentLevel != 1)
+				if(level != 1)
 				{
-					currentLevel = 1;
+					level = 1;
 				}else
 				{
-					currentLevel =  Random.Range(2, countLevel);
+					level =  Random.Range(2, countLevel);
 				}
-				LevelAnimation.GetComponent<StartStopLevelAnimation>().StartStopAn = true;
+				GetComponent<GameProperty>()._NewLevel = true;
+			}
+
+			if(GetComponent<GameProperty>()._NewLevel && !GetComponent<GameProperty>()._PlayAnim  &&  AllMen.transform.childCount == 0) 
+			{
+				currentLevel = level;
+				LevelAnimation.GetComponentInChildren<Text>().text = "Level " + currentLevel.ToString();
+				LevelAnimation.GetComponent<Animation>().Play();
+				GetComponent<GameProperty>()._NewLevel = false;
 			}
 		}
 	}

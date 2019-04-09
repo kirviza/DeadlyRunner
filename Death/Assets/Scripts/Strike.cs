@@ -34,7 +34,7 @@ public class Strike : MonoBehaviour {
 				}
 
 				man.GetComponentInChildren<ForceScript>().enabled = true;
- 
+  
 				switch(Camera.main.GetComponent<setLevelScript>().currentLevel)
 				{
 					case 1: if(man.GetComponent<ManRun>().manType == MAN_TYPE.TYPE_ZERO) 

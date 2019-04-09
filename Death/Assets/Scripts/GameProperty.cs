@@ -11,6 +11,8 @@ public class GameProperty : MonoBehaviour {
 
 	public bool _NeedCreateMan;
 
+	public bool _NewLevel;
+
 	public bool _PlayAnim;
 	public bool _PlayMenuAnim;
 	public bool _PlayLevelAnim;
@@ -19,12 +21,17 @@ public class GameProperty : MonoBehaviour {
 
 	public int _CurScore;
 
+	public GameObject LineFinishResult;
+	public GameObject LineBestResult;
+	public GameObject MainMenu;	
+
 	void Start()
 	{
 		_StartGame = false;
 		_NeedCreateMan = false;
 		_PlayAnim = false;
 		_FinishGame = false;
+		_NewLevel = true;
 	}
 
 	void Update()
@@ -32,22 +39,28 @@ public class GameProperty : MonoBehaviour {
 		if(_FinishGame)
 		{
 			_StartGame = false;
-			
+			_NeedCreateMan = false;
+			_PlayAnim = false;
 			_FinishGame = false;
+			_NewLevel = true;
+
 			GetComponent<setLevelScript>().currentLevel = 1;
+			GetComponent<setLevelScript>().level = 1;
+			GetComponent<setLevelScript>().currentScore = 0;
+
 			_CurScore = GetComponent<ScoreScript>().scoreI;
 			if(_CurScore > _BestScore)
 				_BestScore = _CurScore;
 
-			GameObject.Find("LineFinishResult").GetComponent<Text>().text = "текущий результат: " + _CurScore.ToString();
-			GameObject.Find("LineBestResult").GetComponent<Text>().text = "лучший результат: " + _BestScore.ToString();
-			GameObject.Find("MainMenu").GetComponent<Animation>().Play("FinishAnim");	
-			GetComponent<ScoreScript>().scoreI = 0;
-			GetComponent<ScoreScript>().scoreF = 0;
+			LineFinishResult.GetComponent<Text>().text = "текущий результат: " + _CurScore.ToString();
+			LineBestResult.GetComponent<Text>().text = "лучший результат: " + _BestScore.ToString();
+			MainMenu.GetComponent<Animation>().Play("FinishAnim");	
 			
+			GetComponent<ScoreScript>().scoreI = 0;
+			GetComponent<ScoreScript>().scoreF = 0;		
 		}
 		
-		if(_StartGame && !_PlayAnim)
+		if(_StartGame && !_PlayAnim && !_NewLevel)
 		{
 			_NeedCreateMan = true;
 		}else
@@ -62,9 +75,6 @@ public class GameProperty : MonoBehaviour {
 		{	
 			_PlayAnim = false;
 		}
-
-
-		
 	}
 
 }
