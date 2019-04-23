@@ -190,7 +190,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25333333, y: 0.29900002}
   m_AnchorMax: {x: 0.5, y: 0.44730574}
-  m_AnchoredPosition: {x: -250.00024, y: 0}
+  m_AnchoredPosition: {x: -250.00029, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202861807
@@ -746,6 +746,7 @@ MonoBehaviour:
   AllMen: {fileID: 635736218}
   currentLevel: 1
   level: 1
+  currentScore: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,6 +1915,7 @@ GameObject:
   - component: {fileID: 1792201534}
   - component: {fileID: 1792201536}
   - component: {fileID: 1792201537}
+  - component: {fileID: 1792201538}
   m_Layer: 5
   m_Name: ButtonRecord
   m_TagString: Untagged
@@ -2013,6 +2015,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf3896285540f9b4fade0ebee84299ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1792201538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792201532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9642e9da7c94e4a41b9d2473aed259b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2009054539

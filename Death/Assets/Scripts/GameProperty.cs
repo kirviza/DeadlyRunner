@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using UnityEngine.SocialPlatforms;
 
 public class GameProperty : MonoBehaviour {
 
@@ -25,6 +28,9 @@ public class GameProperty : MonoBehaviour {
 	public GameObject LineBestResult;
 	public GameObject MainMenu;	
 
+	private const string leaderBoard = "CgkIkcTti8sNEAIQBg";
+
+
 	void Start()
 	{
 		_StartGame = false;
@@ -32,6 +38,18 @@ public class GameProperty : MonoBehaviour {
 		_PlayAnim = false;
 		_FinishGame = false;
 		_NewLevel = true;
+
+		PlayGamesPlatform.DebugLogEnabled = false;
+		PlayGamesPlatform.Activate();
+		Social.localUser.Authenticate((bool success) => {
+			if(success)
+			{
+				Debug.Log("Good A");
+			}else{
+				Debug.Log("Bad A");
+
+			}
+		});
 	}
 
 	void Update()
@@ -51,6 +69,16 @@ public class GameProperty : MonoBehaviour {
 			_CurScore = GetComponent<ScoreScript>().scoreI;
 			if(_CurScore > _BestScore)
 				_BestScore = _CurScore;
+
+			if(_BestScore > PlayerPrefs.GetInt("score"))
+			{
+				PlayerPrefs.SetInt("score", _BestScore);
+				Social.ReportScore(_BestScore, leaderBoard, (bool success) =>
+				{
+					if (success) Debug.Log("GOOD");
+					else Debug.Log("BAD");
+				});
+			}
 
 			LineFinishResult.GetComponent<Text>().text = "текущий результат: " + _CurScore.ToString();
 			LineBestResult.GetComponent<Text>().text = "лучший результат: " + _BestScore.ToString();
