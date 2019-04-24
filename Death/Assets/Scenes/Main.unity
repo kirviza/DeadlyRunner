@@ -258,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25333333, y: 0.29900002}
   m_AnchorMax: {x: 0.5, y: 0.44730574}
-  m_AnchoredPosition: {x: -250.00018, y: 0}
+  m_AnchoredPosition: {x: -250.0002, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202861807
@@ -747,11 +747,15 @@ MonoBehaviour:
   _StartGame: 0
   _FinishGame: 0
   _NeedCreateMan: 0
+  _NewLevel: 0
   _PlayAnim: 0
   _PlayMenuAnim: 0
   _PlayLevelAnim: 0
   _BestScore: 0
   _CurScore: 0
+  LineFinishResult: {fileID: 849544818}
+  LineBestResult: {fileID: 1345738040}
+  MainMenu: {fileID: 634033899}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -836,7 +840,10 @@ MonoBehaviour:
   modValue: 20
   ScoreLine: {fileID: 1769610610}
   LevelAnimation: {fileID: 589580420}
+  AllMen: {fileID: 635736218}
   currentLevel: 1
+  level: 1
+  currentScore: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,7 +1068,6 @@ GameObject:
   m_Component:
   - component: {fileID: 589580423}
   - component: {fileID: 589580422}
-  - component: {fileID: 589580421}
   - component: {fileID: 589580424}
   m_Layer: 0
   m_Name: LevelAnimation
@@ -1070,18 +1076,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &589580421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 589580420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53bb326bb926dcb4aa80f29f4559c9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartStopAn: 0
 --- !u!111 &589580422
 Animation:
   m_ObjectHideFlags: 0
@@ -1090,18 +1084,9 @@ Animation:
   m_GameObject: {fileID: 589580420}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 78af262e8c48db443925102345f65e87, type: 2}
+  m_Animation: {fileID: 7400000, guid: b07909d84f859e5429a8ef5a313f50be, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 78af262e8c48db443925102345f65e87, type: 2}
-  - {fileID: 7400000, guid: ce733b5595fbaeb4da71996b0f905576, type: 2}
-  - {fileID: 7400000, guid: fa254387356995246852a0471b759c4d, type: 2}
-  - {fileID: 7400000, guid: fcbbd6e80c31f3049b1731077bb4cbd0, type: 2}
-  - {fileID: 7400000, guid: 5fe0ace554c1fcb428d4e376d495eb5b, type: 2}
-  - {fileID: 7400000, guid: c4d90c9855865e84a9df26bb03255a92, type: 2}
-  - {fileID: 7400000, guid: df1dfa91f06c64e4487b2b367bb76213, type: 2}
-  - {fileID: 7400000, guid: 1feb295ac5f71a94a94960088d8f0df2, type: 2}
-  - {fileID: 7400000, guid: 91a1422de0cea424cad4c1efec844ee3, type: 2}
-  - {fileID: 7400000, guid: 44ad1ab8821adf24cba7b47f62967b35, type: 2}
+  - {fileID: 7400000, guid: b07909d84f859e5429a8ef5a313f50be, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
