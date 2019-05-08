@@ -65,3 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   death: {fileID: 0}
+  goodSoul: {fileID: 1595005511777980, guid: 946cf906fe6d5e246b00ca8584e7f07b, type: 2}
+  badSoul: {fileID: 1442513042159830, guid: 84ebda98874b93f429dc8ff1b48d10d2, type: 2}
+  parent: {fileID: 0}

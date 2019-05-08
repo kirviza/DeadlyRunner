@@ -12,6 +12,8 @@ public class GameProperty : MonoBehaviour {
 
 	public bool _FinishGame;
 
+	public bool _PauseGame;
+
 	public bool _NeedCreateMan;
 
 	public bool _NewLevel;
@@ -34,6 +36,7 @@ public class GameProperty : MonoBehaviour {
 	void Start()
 	{
 		_StartGame = false;
+		_PauseGame = false;
 		_NeedCreateMan = false;
 		_PlayAnim = false;
 		_FinishGame = false;
@@ -57,6 +60,7 @@ public class GameProperty : MonoBehaviour {
 		if(_FinishGame)
 		{
 			_StartGame = false;
+			_PauseGame = false;
 			_NeedCreateMan = false;
 			_PlayAnim = false;
 			_FinishGame = false;

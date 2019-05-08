@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Strike : MonoBehaviour {
 
@@ -9,9 +10,14 @@ public class Strike : MonoBehaviour {
 	public GameObject badSoul;
 	public Transform parent;
 
-  void OnMouseDown (){
+	public GameObject rip;
 
-		if(Camera.main.GetComponent<GameProperty>()._StartGame && !Camera.main.GetComponent<GameProperty>()._PlayAnim)
+  void OnMouseDown (){
+	  	
+		if (EventSystem.current.IsPointerOverGameObject())
+        	return;
+
+		if(Camera.main.GetComponent<GameProperty>()._StartGame && !Camera.main.GetComponent<GameProperty>()._PlayAnim && !Camera.main.GetComponent<GameProperty>()._PauseGame)
 		{
 			//Запуск анимации удара
 			death.GetComponent<Animator>().SetTrigger("touch");
@@ -51,6 +57,9 @@ public class Strike : MonoBehaviour {
 							Camera.main.GetComponent<GameProperty>()._FinishGame = true;
 							break;
 				}
+
+				Instantiate(rip, man.transform.position, Quaternion.identity);
+				//Destroy(man);
 
 			}
 		}
