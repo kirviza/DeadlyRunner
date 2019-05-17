@@ -6,6 +6,12 @@ public class ButtonExitScript : MonoBehaviour {
 
 	void OnMouseUp()
 	{
-		gameObject.GetComponentInParent<Animation>().Play("CallExitMenuAnim");
+		if(Camera.main.GetComponent<GameProperty>()._PauseGame)
+		{
+			gameObject.GetComponentInParent<Animation>().Play("CallExitMenuPauseAnim");
+		}else
+		{
+			gameObject.GetComponentInParent<Animation>().Play("CallExitMenuAnim");
+		}
 	}
 }

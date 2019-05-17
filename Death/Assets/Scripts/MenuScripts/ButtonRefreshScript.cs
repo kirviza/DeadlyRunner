@@ -8,8 +8,7 @@ public class ButtonRefreshScript : MonoBehaviour {
 	
 	void OnMouseUp()
 	{
-		buttonPause.SetActive(true);
-		gameObject.SetActive(false);
+		gameObject.GetComponentInParent<Animation>().Play("CancelPauseAnim");
 		Time.timeScale = 1;
 		Camera.main.GetComponent<GameProperty>()._PauseGame = false;
 	}

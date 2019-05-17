@@ -11,16 +11,14 @@ public class ButtonPauseScript : MonoBehaviour {
 		if(!hasFocus)
         {
 			Camera.main.GetComponent<GameProperty>()._PauseGame = true;
-            buttonRefresh.SetActive(true);
-			gameObject.SetActive(false);
-			Time.timeScale = 0;
+            gameObject.GetComponentInParent<Animation>().Play("PauseAnim");
+			//Time.timeScale = 0;
         }
     } 
     void OnMouseUp()
 	{
 		Camera.main.GetComponent<GameProperty>()._PauseGame = true;
-		buttonRefresh.SetActive(true);
-		gameObject.SetActive(false);
-		Time.timeScale = 0;
+		gameObject.GetComponentInParent<Animation>().Play("PauseAnim");
+		//Time.timeScale = 0;
 	}
 }

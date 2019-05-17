@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Strike : MonoBehaviour {
 
@@ -13,14 +12,14 @@ public class Strike : MonoBehaviour {
 	public GameObject rip;
 
   void OnMouseDown (){
-	  	
-		if (EventSystem.current.IsPointerOverGameObject())
-        	return;
 
 		if(Camera.main.GetComponent<GameProperty>()._StartGame && !Camera.main.GetComponent<GameProperty>()._PlayAnim && !Camera.main.GetComponent<GameProperty>()._PauseGame)
 		{
 			//Запуск анимации удара
 			death.GetComponent<Animator>().SetTrigger("touch");
+
+			if(gameObject.GetComponent<AudioSource>().enabled)
+				gameObject.GetComponent<AudioSource>().Play();
 		
 			if(death.GetComponent<DeathTrigger>().man)
 			{

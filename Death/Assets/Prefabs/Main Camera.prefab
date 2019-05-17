@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _StartGame: 0
   _FinishGame: 0
+  _PauseGame: 0
   _NeedCreateMan: 0
   _NewLevel: 0
   _PlayAnim: 0
