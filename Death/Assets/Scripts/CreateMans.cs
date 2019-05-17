@@ -26,7 +26,7 @@ public class CreateMans : MonoBehaviour {
 			{	
 				mainTime = Random.Range(minTime, maxTime);
 				deltaTime = 0;
-				numbMan = Random.Range(0, men.Length-1);	
+				numbMan = Random.Range(0, men.Length);	
 
 				GameObject man = Instantiate(men[numbMan], new Vector3(25, -1.0f, 0), Quaternion.identity, parent) as GameObject;
  
