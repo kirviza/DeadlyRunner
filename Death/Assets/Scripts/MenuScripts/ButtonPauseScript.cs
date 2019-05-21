@@ -8,7 +8,7 @@ public class ButtonPauseScript : MonoBehaviour {
 
 	void OnApplicationFocus (bool hasFocus)
     {
-		if(!hasFocus)
+		if(!hasFocus && Camera.main.GetComponent<GameProperty>()._StartGame)
         {
 			Camera.main.GetComponent<GameProperty>()._PauseGame = true;
             gameObject.GetComponentInParent<Animation>().Play("PauseAnim");

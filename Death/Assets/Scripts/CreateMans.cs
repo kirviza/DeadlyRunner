@@ -19,7 +19,7 @@ public class CreateMans : MonoBehaviour {
 	}
 	
 	void Update () {
-		if(GetComponent<GameProperty>()._NeedCreateMan &&  GetComponent<GameProperty>()._CurScore != 0 )
+		if(GetComponent<GameProperty>()._NeedCreateMan &&  GetComponent<GameProperty>()._CurScore != 0 && !GetComponent<GameProperty>()._PauseGame)
 		{
 			deltaTime += Time.deltaTime;
 			if(deltaTime>mainTime)

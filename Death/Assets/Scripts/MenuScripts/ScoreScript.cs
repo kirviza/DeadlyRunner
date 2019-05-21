@@ -22,7 +22,7 @@ public class ScoreScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(GetComponent<GameProperty>()._StartGame  && !GetComponent<GameProperty>()._PlayMenuAnim)
+		if(GetComponent<GameProperty>()._StartGame  && !GetComponent<GameProperty>()._PlayMenuAnim && !GetComponent<GameProperty>()._PauseGame)
 		{
 			scoreF += Time.deltaTime;
 			scoreI = (int)(scoreF/speedScore);

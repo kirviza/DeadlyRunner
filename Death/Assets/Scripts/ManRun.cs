@@ -29,7 +29,11 @@ public class ManRun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3(transform.position.x - Time.deltaTime * speed, transform.position.y, transform.position.z);
+		
+		if(!Camera.main.GetComponent<GameProperty>()._PauseGame)
+		{
+			transform.position = new Vector3(transform.position.x - Time.deltaTime * speed, transform.position.y, transform.position.z);
+		}
 
 		if(Vector2.Distance(transform.position, deathPosition) < distance && manLight == null)
 		{
