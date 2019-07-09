@@ -502,6 +502,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1275191116558872, guid: 9965155d031a66840b8645698b8d9d8c,
     type: 2}
   m_PrefabInternal: {fileID: 1251714572}
+--- !u!1 &867342973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1810721295438032, guid: 9965155d031a66840b8645698b8d9d8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1251714572}
 --- !u!1001 &1088440443
 Prefab:
   m_ObjectHideFlags: 0
@@ -664,11 +669,16 @@ Prefab:
     - target: {fileID: 224606685179283202, guid: 9965155d031a66840b8645698b8d9d8c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -250.00018
+      value: -250.00024
       objectReference: {fileID: 0}
     - target: {fileID: 61421322891148420, guid: 9965155d031a66840b8645698b8d9d8c,
         type: 2}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114836240017983264, guid: 9965155d031a66840b8645698b8d9d8c,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -810,6 +820,11 @@ Prefab:
       propertyPath: modValue
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 114869296575176936, guid: a874551f6568ee842b22ee041ac930a1,
+        type: 2}
+      propertyPath: TextLevel
+      value: 
+      objectReference: {fileID: 867342973}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a874551f6568ee842b22ee041ac930a1, type: 2}
   m_IsPrefabAsset: 0

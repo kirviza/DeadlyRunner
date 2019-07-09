@@ -30,6 +30,8 @@ public class GameProperty : MonoBehaviour {
 	public GameObject LineBestResult;
 	public GameObject MainMenu;	
 
+	public GameObject TextLevel;
+
 	private const string leaderBoard = "CgkIkcTti8sNEAIQBg";
 
 
@@ -69,6 +71,8 @@ public class GameProperty : MonoBehaviour {
 			GetComponent<setLevelScript>().currentLevel = 1;
 			GetComponent<setLevelScript>().level = 1;
 			GetComponent<setLevelScript>().currentScore = 0;
+
+			TextLevel.transform.localScale = new Vector3(0, 0, 0);
 
 			_CurScore = GetComponent<ScoreScript>().scoreI;
 			if(_CurScore > _BestScore)
